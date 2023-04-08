@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+body,
+main.container,
+section.detail,
+.social-media-detail,
+.name-age,
+.profile-detail,
+.profile-picture,
+.followers,
+.likes,
+.photos {
+  display: flex;
+}
+
+body {
+  max-width: 1440px;
+  min-height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: hsl(185, 75%, 39%);
+  background-image: url(./images/bg-pattern-top.svg), url("./images/bg-pattern-bottom.svg");
+  background-position: right 50vw bottom 50vh, left 45vw top 50vh;
+  background-repeat: no-repeat, no-repeat;
+}
+
+main.container {
+  position: relative;
+  padding: 0;
+  max-width: 360px;
+  height: 360px;
+  flex-direction: column;
+  overflow: hidden;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 1em;
+  background-color: white;
+}
+
+section.header {
+  height: 40%;
+  width: 100%;
+}
+section.header img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+section.header .profile-picture {
+  position: relative;
+  margin-bottom: 40px;
+  align-items: center;
+  justify-content: center;
+}
+section.header .profile-picture img {
+  position: absolute;
+  top: -45px;
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  border: 4px solid white;
+}
+
+section.detail {
+  height: 60%;
+  width: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+section.detail h1 {
+  font-weight: 700;
+}
+section.detail .profile-detail {
+  flex-direction: column;
+  align-items: center;
+  padding-top: 64px;
+}
+section.detail .profile-detail .name-age h1 {
+  margin: 0 4px;
+  font-size: 16px;
+}
+section.detail .profile-detail .name-age .age {
+  color: hsl(0, 0%, 59%);
+  font-weight: 500;
+}
+section.detail .profile-detail .birth-place h2 {
+  font-size: 16px;
+  color: hsl(0, 0%, 59%);
+}
+section.detail .social-media-detail {
+  border-top: 1.5px solid hsl(0, 0%, 59%);
+  justify-content: space-between;
+  width: 100%;
+  padding: 24px 48px;
+}
+section.detail .social-media-detail h1 {
+  font-size: 18px;
+}
+section.detail .social-media-detail h2 {
+  font-size: 12px;
+  color: hsl(0, 0%, 59%);
+}
+section.detail .social-media-detail .followers,
+section.detail .social-media-detail .likes,
+section.detail .social-media-detail .photos {
+  flex-direction: column;
+  align-items: center;
+}
+
+footer {
+  margin-top: 40px;
+  text-align: center;
+}/*# sourceMappingURL=styles.css.map */
