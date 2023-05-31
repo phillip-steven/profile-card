@@ -136,3 +136,15 @@ footer {
   margin-top: 40px;
   text-align: center;
 }
+
+@media only screen and (max-width: 768px) {
+  body {
+    padding: 16px;
+    main.container {
+      width: 100%;
+    }
+    footer {
+      font-size: 8px;
+    }
+  }
+}

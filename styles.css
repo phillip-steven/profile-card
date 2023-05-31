@@ -121,4 +121,16 @@ section.detail .social-media-detail .photos {
 footer {
   margin-top: 40px;
   text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+  body {
+    padding: 16px;
+  }
+  body main.container {
+    width: 100%;
+  }
+  body footer {
+    font-size: 8px;
+  }
 }/*# sourceMappingURL=styles.css.map */
